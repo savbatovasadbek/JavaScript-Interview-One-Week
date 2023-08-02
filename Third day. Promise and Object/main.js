@@ -2,6 +2,8 @@
 
 // ===================>>>>>>>>>
 
+// let neww = new Promise((resolve, reject) => {});
+
 // let promise = new Promise((resolve, reject) => {
 //   const data = {
 //     name: "John",
@@ -10,10 +12,10 @@
 //   };
 
 //   resolve(data);
-//   //   reject(data);
+//   // reject(data);
 // });
 
-// Promises chaining -> then().then().then()..
+// // Promises chaining -> then().then().then()..
 
 // promise
 //   .then((result) => {
@@ -33,7 +35,7 @@
 //     console.log(data);
 //   })
 //   .catch((err) => {
-//     console.log(`${err} is not working ...`);
+//     console.error(`${err} is not working ...`);
 //   })
 //   .finally(() => {
 //     console.log("All work is done ...");
@@ -68,7 +70,7 @@
 
 // Promise.all([user1, user2, user3]).then((result) => console.log(result));
 
-// Promise.race([user2, user3]).then((result) => console.log(result));
+// Promise.race([user2, user3, user1]).then((result) => console.log(result));
 
 // End Promise ...
 
@@ -98,7 +100,7 @@
 // addUser({ fName: "Harry", lName: "Potter" }, getUsers);
 // addUser({ fName: "Harry", lName: "Potter" }, getUsers);
 
-// // getUsers();
+// getUsers();
 
 // ========== Async -< Await ==========>>>>>>>
 
@@ -117,7 +119,7 @@
 // }
 
 // function addUser(user) {
-//   return new Promise((resolve, reject) => {
+//   return new Promise((resolve) => {
 //     setTimeout(() => {
 //       users2.push(user);
 //       resolve(users2);
@@ -135,6 +137,7 @@
 // getUsers();
 
 // async function result() {
+//   console.log("Async is working");
 //   await addUser({ fName: "Harry", lName: "Potter" });
 //   await addUser({ fName: "Harry", lName: "Potter" });
 //   await addUser({ fName: "Harry", lName: "Potter" });
@@ -201,8 +204,8 @@
 // console.log(Object.isFrozen(person));
 // Object.freeze(person);
 
-// console.log(Object.isSealed(person));
 // Object.seal(person); // -> Edit
+// console.log(Object.isSealed(person));
 
 // person.age = "31";
 // person.name = "Doe";
@@ -217,18 +220,18 @@ const person = Object.create(
       value: "John",
       enumerable: true,
       writable: false,
-      configurable: false,
+      // configurable: false,
     },
     age: {
       value: 30,
       enumerable: true,
       writable: true,
-      configurable: false,
+      // configurable: false,
     },
     isMarried: {
       value: false,
       enumerable: true,
-      writable: false,
+      // writable: false,
       configurable: true,
     },
   }
@@ -237,7 +240,7 @@ const person = Object.create(
 person.age = 50;
 // delete person.isMarried;
 
-// console.log(person);
+console.log(person);
 
 // ====================>>>>>>>
 
