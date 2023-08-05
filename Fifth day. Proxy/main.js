@@ -151,18 +151,18 @@ console.log(proxy);
 // const { log } = console;
 // log(5);
 
-// const log = (text) => `Log: ${text}`;
-// console.log(log(5));
-// // print("555");
+const log = (text) => `Log: ${text}`;
+console.log(log(5));
+// print("555");
 
-// const fn = new Proxy(log, {
-//   apply(target, thisAgs, args) {
-//     console.log(`Apply is working ...`);
+const fn = new Proxy(log, {
+  apply(target, thisAgs, args) {
+    console.log(`Apply is working ...`);
 
-//     return target.apply(thisAgs, args).toUpperCase();
-//   },
-// });
-// console.log(fn(5));
+    return target.apply(thisAgs, args).toUpperCase();
+  },
+});
+console.log(fn(5));
 
 // =============== Class -> Proxy==================>>>>>>>>>>
 

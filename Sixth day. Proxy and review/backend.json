@@ -1,0 +1,20 @@
+[
+  {
+    "name": "John",
+    "age": 30,
+    "isMarried": true,
+    "books": null
+  },
+  {
+    "name": "John",
+    "age": 30,
+    "isMarried": true,
+    "books": null
+  },
+  {
+    "name": "John",
+    "age": 30,
+    "isMarried": true,
+    "books": null
+  }
+]

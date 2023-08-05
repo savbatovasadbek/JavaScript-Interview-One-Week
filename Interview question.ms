@@ -4,3 +4,5 @@
 - Classlarda static (Abstruction) propertylar qanday foydalaniladi?
 - Pure Function nima?
 - Curry Function nima?
+
+-- 
