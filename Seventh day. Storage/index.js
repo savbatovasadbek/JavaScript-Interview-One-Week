@@ -1,11 +1,18 @@
-// LocalStorage
+// ================= LocalStorage ==================>>>>>>>>>>>>
+
 // LocalStorage - bu browserni 5-10mb oralig'ida kichik  faqat primitiv string tipidagi ma'lumotlarni saqlash uchun kerak bo'ladigan xotirasi
 
 // Local Storage - Brauzer yopilganda saqlangan ma'lumotlar o'chirilmaydi.
 
+// =============== Session Storage ====================>>>>>>>>>>>>
+
 // Session Storage - Ma'lumotlar faqat sessiya uchun saqlanadi va brauzer yopilganda o'chiriladi.
 
+// =============== Cookies ====================>>>>>>>>>>>>
+
 // Cookies - Ma'lumotlarning amal qilish muddati ma'lum bir vaqtda tugashi mumkin.
+
+// =============== Fuatures ====================>>>>>>>>>>>>
 
 // setItem('key' , value) - localStoragega ma'lumot saqlash uchun ishlatiladi
 
@@ -19,6 +26,8 @@
 
 // JSON.parse(localStorage.getItem('names')) -  localStoragedagi array ko'rinishidagi ma'lumot olish uchun ishlatiladi
 
+// =============== Example ====================>>>>>>>>>>>>
+
 // localStorage.setItem("name", "John");
 
 // localStorage.getItem("name");
@@ -27,6 +36,7 @@
 
 // sessionStorage.setItem('name' , 'John')
 
+// =============== Save up word with Local storage ====================>>>>>>>>>>>>
 
 const h1 = document.querySelector("#h1");
 const btn = document.querySelector("#btn");
